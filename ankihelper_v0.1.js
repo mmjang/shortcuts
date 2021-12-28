@@ -2592,3 +2592,5 @@ if (typeof module === "object") {
 }
 
 var article = new Readability(document).parse();
+
+document.documentElement.innerHTML = article.content;
